@@ -21,11 +21,12 @@ public class StartController {
 		
 	}
 	@RequestMapping("add")
-	public void add(Model model) {
-		model.addAttribute("test",3);
+	public void add() {
+		
 	}
 	@RequestMapping("sub")
-	public void sub(Model model) {
+	public void sub() {
+		
 	}
 	@RequestMapping("result")
 	public void result(Integer[] num,Integer num1,Integer num2,Integer num3,String add,String sub,String random,Model model) {
