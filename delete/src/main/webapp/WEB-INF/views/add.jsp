@@ -10,20 +10,22 @@
 <body>
 <form action="">
 몇개의 숫자를 더하겠습니까? <input type="number" name="amount"> 
-<input type="submit" value="출력">
+<input type="submit" value="출력" id="submit">
 </form>
 <br>
 <form action="/result" >
-	<c:forEach begin="1" end="${param.amount}" step="1">	
-		<input type="number" name="num"> 
-	</c:forEach>
+	<c:if test="${param.amount!=null }">
+		<c:forEach begin="1" end="${param.amount-1}" step="1">	
+			<input type="number" name="num"> +  
+		</c:forEach>	
+		<input type="number" name="num">
+	</c:if> 
 	<br>
 	<c:if test="${param.amount!=null }">
-	<input type="submit" value="계산" >
+		<input type="submit" value="계산" >
 	</c:if>
 	<input type="hidden" name="add" value="0">
 </form>
-
 
 </body>
 </html>

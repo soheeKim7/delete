@@ -14,9 +14,12 @@
 </form>
 <br>
 <form action="/result" >
-	<c:forEach begin="1" end="${param.amount}" step="1">	
-		<input type="number" name="num"> 
-	</c:forEach>
+	<c:if test="${param.amount!=null }">
+		<c:forEach begin="1" end="${param.amount-1}" step="1">	
+			<input type="number" name="num"> -  
+		</c:forEach>	
+		<input type="number" name="num">
+	</c:if> 
 	<br>
 	<c:if test="${param.amount!=null }">
 	<input type="submit" value="계산" >
