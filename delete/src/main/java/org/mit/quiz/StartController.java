@@ -28,18 +28,23 @@ public class StartController {
 	public void sub(Model model) {
 	}
 	@RequestMapping("result")
-	public void result(Integer num1,Integer num2, Integer num3,String add,String sub,String random,Model model) {
+	public void result(Integer[] num,Integer num1,Integer num2,Integer num3,String add,String sub,String random,Model model) {
 		Integer result=0;
 		log.info(add);
 		log.info(sub);
 		if(add!=null) {
 			if(add.equals("0")){
-				result=num1+num2+num3;
+				for(Integer cal:num) {
+					result += cal;
+				}
 			}
 		}
 		if(sub!=null) {
 			if(sub.equals("1")){
-				result=num1-num2-num3;
+				result=num[0];
+				for(int i=1;i<num.length;i++) {
+					result -= num[i];
+				}
 			}
 		}
 		List<Integer> rnum = new ArrayList<>();
@@ -60,9 +65,6 @@ public class StartController {
 					log.info("범위보다, 카운트 값이 큽니다. \n범위나 카운트를 다시 설정해주세요.");
 				}		
 			}
-		}
-		for(int num:rnum) {
-			log.info(num);
 		}
 		
 		model.addAttribute("add",add);
