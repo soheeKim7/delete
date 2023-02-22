@@ -34,11 +34,18 @@ public class StartController {
 		log.info(sub);
 		if(add!=null) {
 			if(add.equals("0")){
-				for(Integer cal:num) {
-					result += cal;
-				}
+				for(Integer cal:num) 
+					result += cal;				
 			}
 		}
+		if(sub!=null) {
+			if(sub.equals("1")){
+				result=num[0]*2;
+				for(Integer cal:num) 
+					result -= cal;
+			}
+		}
+		/*
 		if(sub!=null) {
 			if(sub.equals("1")){
 				result=num[0];
@@ -47,6 +54,7 @@ public class StartController {
 				}
 			}
 		}
+		*/
 		List<Integer> rnum = new ArrayList<>();
 		if(random!=null) {
 			if(random.equals("2")) {
