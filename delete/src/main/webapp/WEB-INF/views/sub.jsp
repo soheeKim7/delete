@@ -9,10 +9,11 @@
 </head>
 <body>
 <form action="">
+1. 서버로 요청해서 페이지 내용을 변경하는법<hr>
 몇개의 숫자를 빼겠습니까? <input type="number" name="amount"> 
-<input type="submit" value="출력">
+<input type="submit" value="출력" id="submit">
 </form>
-<br>
+<hr>
 <form action="/result" >
 	<c:if test="${param.amount!=null }">
 		<c:forEach begin="1" end="${param.amount-1}" step="1">	

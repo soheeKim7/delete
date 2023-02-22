@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import lombok.extern.log4j.Log4j;
@@ -24,10 +25,21 @@ public class StartController {
 	public void add() {
 		
 	}
+	@GetMapping("/add1")
+	public void add1() {
+	
+	}
+	
 	@RequestMapping("sub")
 	public void sub() {
 		
 	}
+	
+	@GetMapping("/sub1")
+	public void sub1() {
+	
+	}
+	
 	@RequestMapping("result")
 	public void result(Integer[] num,Integer num1,Integer num2,Integer num3,String add,String sub,String random,Model model) {
 		Integer result=0;
