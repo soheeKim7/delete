@@ -29,6 +29,14 @@ public class StartController {
 	public void add1() {
 	
 	}
+	@GetMapping("/add2")
+	public void add2() {
+		
+	}
+	@GetMapping("/test")
+	public void test() {
+		
+	}
 	
 	@RequestMapping("sub")
 	public void sub() {

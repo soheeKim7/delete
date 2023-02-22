@@ -10,6 +10,7 @@
 <ol>
 	<li> <a href="/add">다 더해주마</a>	</li>
 	<li> <a href="/add1">다 더해주마(자바스크립트로)</a></li>
+	<li> <a href="/add2">다 더해주마(자바스크립트로 바로)</a></li>
 	<li><a href="/sub">다 빼주마</a></li>
 	<li> <a href="/sub1">다 빼주마(자바스크립트로)</a></li>
 	<li><a href="/random">랜덤으로 뽑아주마</a>	</li>
