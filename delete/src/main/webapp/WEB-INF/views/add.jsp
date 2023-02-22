@@ -10,7 +10,7 @@
 <body>
 <form action="">
 몇개의 숫자를 더하겠습니까? <input type="number" name="amount"> 
-<input type="submit" value="출력" id="submit">
+<input type="submit" value="출력">
 </form>
 <br>
 <form action="/result" >
