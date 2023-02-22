@@ -22,6 +22,7 @@ public class StartController {
 	}
 	@RequestMapping("add")
 	public void add(Model model) {
+		model.addAttribute("test",3);
 	}
 	@RequestMapping("sub")
 	public void sub(Model model) {
