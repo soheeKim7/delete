@@ -42,16 +42,16 @@
 		var num1 = parseInt($("#num1").val());
 		var num2 = parseInt($("#num2").val());
 		var sum = num1+num2;
-		console.log(num1);
-		console.log(num2);		
-		console.log(sum);		
+		console.log("첫번째 num1 : "+num1);
+		console.log("num2 : "+num2);		
+		console.log("num1+num2 합계"+sum);		
 	
 	});
 	
-	$("#num1").each(function(index,value){
+	$("#num1").each(function(){
 		var num = parseInt($(this).val());
 		var sum = 0;
-		console.log(num);
+		console.log("두번째 num1 : "+num);
 		sum += num;
 		console.log(sum);		
 	});

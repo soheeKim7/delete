@@ -37,6 +37,14 @@ public class StartController {
 	public void test() {
 		
 	}
+	@GetMapping("/test2")
+	public void test2() {
+		
+	}
+	@GetMapping("/addH")
+	public void addH() {
+		
+	}
 	
 	@RequestMapping("sub")
 	public void sub() {
